@@ -35,6 +35,7 @@
          full = true;
          line.style.bottom = `-50px`;
        }
+     
        sections.forEach(item => {
          
          const rect = item.getBoundingClientRect(); 
@@ -45,7 +46,8 @@
        }); 
      
        prevScrollY = window.scrollY;
-     }    
+     }
+     
      scrollHandler();
      line.style.display = 'block';
      window.addEventListener('scroll', scrollHandler);
